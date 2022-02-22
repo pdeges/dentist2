@@ -1,0 +1,306 @@
+a{
+  font-family: Arial;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+body {
+  font-family : "Open Sans", sans-serif;
+  margin: 0;
+
+}
+
+.page__layout{
+  min-height: 100vh;
+}
+
+.navigation{
+  background-color: rgb(154, 186, 196);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15rem;
+  height: 100vh;
+}
+
+.navigation__content {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0rem 1rem;
+}
+
+.navigation__item{
+  width: 100%;
+  height: 6rem;
+  text-align: center;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
+.navigation__item--separator{
+  border-top: 1px solid white;
+  padding-top: 3rem;
+
+}
+
+
+
+.powered-by{
+  align-self: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0rem 1rem;
+}
+
+.powered-by__text{
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.powered-by__name{
+  margin:0;
+  padding: 0;
+  font-size: 3rem;
+}
+
+.main__layout{
+  background-color: rgb(233, 247, 250);
+  position: absolute;
+  left: 15rem;
+  right: 0;
+}
+
+
+.button {
+  padding: 5.5rem 3rem 1rem 3rem;
+
+  border-radius: 2em;
+  color: #fff;
+
+  letter-spacing: .15rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
+  max-width: 12rem;
+
+
+}
+
+
+.button:focus{
+  background-color: rgb(255, 255, 255);
+  color: rgb(107, 167, 186);
+  z-index: -1;
+}
+.fa-solid {
+  color: rgb(62, 109, 126);
+  z-index: 99;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.button__subtitle {
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin-bottom: 2rem;
+  color: #777;
+}
+
+.navigation__layout__line{
+  height: .25rem;
+  width: 14rem;
+  background: white;
+  border-radius: .2rem;
+  align-self: center;
+}
+
+
+
+.header__layout {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  grid-template-rows: 15rem ;
+  height: 15rem;
+
+}
+
+.header__logo {
+  grid-column: 2/3;
+  justify-self: center;
+}
+
+.header__language {
+  grid-column: 3/4;
+  justify-self: center;
+  margin-top: 2rem;
+  padding-right: 1rem;
+}
+
+.header__login {
+  grid-column: 4/5;
+  justify-self: center;
+  margin-top: 2rem;
+  padding-right: 5rem;
+}
+
+.header__logo__image {
+  width: 13rem;
+  height: 10rem;
+}
+
+
+
+
+
+
+/* nav {
+  width : 300px;
+  background: #d9d9d9;
+  margin : 40px auto;
+} */
+
+
+
+
+
+
+.slide {
+
+  min-width: 5.51rem;
+  height:4rem;
+  overflow: hidden;
+  text-align: right;
+  border-radius: 1rem;
+  border-style: none;
+  padding-right: 0.5rem;
+  background-color: transparent;
+}
+
+/* .slide div {padding : 1rem;}
+
+
+#language, #login, #sort-by {position: absolute; opacity: 0; height: 0px;}
+
+#language:checked + .slide {height: 300px;}
+#login:checked + .slide {height: 300px;}
+#sort-by:checked + .slide {height: 300px; } */
+
+#search {
+  width: 100%;
+  border-radius: 2rem;
+  height: 3rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.searchbar {
+  padding: 4rem;
+}
+
+.searchbar__text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: rgb(62, 109, 126);
+  padding-bottom: 2rem;
+}
+
+.sort__layout {
+  width: 15rem;
+  padding-left: 4rem;
+}
+
+.patients-records {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+
+.patient {
+  flex: auto;
+  display: flex;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem;
+  margin: 0.5rem;
+}
+.patient__name-block {
+  flex: 1;
+}
+
+.patient__name-title, .patient__number-title, .patient__birthday-title {
+  font-style: italic;
+  color: rgb(109, 105, 105);
+}
+
+.patient__name, .patient__number, .patient__birthday {
+  font-weight: 700;
+}
+
+.patient__number-block {
+  flex: 1;
+}
+
+.patient__birthday-block {
+  flex: 1;
+}
+
+.patient__edit-block {
+  flex: 1;
+
+}
+
+.patient__edit-button, .patient__show-button, .header__language-icon, .header__login-icon{
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 4rem;
+  border-radius: 1em;
+
+}
+.patient__edit-button {
+  background-image: url(/images/edit.png);
+
+}
+.patient__show-button {
+  background-image: url(/images/show.png);
+
+}
+.header__language-icon {
+  background-image: url(images/lang.png);
+}
+.header__login-icon {
+  background-image: url(images/user.png);
+}
+
+.patient__edit-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.header__language, .header__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
